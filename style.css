@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;500&family=Roboto+Slab:wght@700&family=Sacramento&family=Syne:wght@400;800&display=swap');
+*{
+
+   
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    list-style: none;
+    color: #000 !important;
+}
+
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1, h2, h3{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+body{
+    background-image: url(bg.png.webp);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-center{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.logo{
+    width: 50px;
+}
+header {
+    color: #fff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.section {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid #333;
+    background: aliceblue;
+}
+
+.shadow-design {
+    background-color: #fff;
+    padding: 6px 20px;
+    border-radius: 5px;
+    top:0px; border: 2px solid #333;
+    transition: all .3s ease-in;
+    box-shadow: 2px 5px #000;
+    position: relative;
+}
+
+.shadow-design:hover {
+    box-shadow: none;
+    background-color: #FFCFFF;
+    top:5px;
+
+}
+.home-container h2 {
+    font-size: 50px;
+    margin: 0px 0px 15px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+    border-color: #000 !important;
+    box-shadow: 2px 1px #000;
+}
+
+.col.border-end {
+    border-right-color: #000 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header css - pragati tendolkar */
+nav a.active {
+    font-weight: bold;
+    color: #FCE36C !important;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+
+
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .hamburger-lines {
+    display: none;
+
+  }
+
+  .nav-container .checkbox {
+    display: none;
+ 
+  }
+  header.navbar {
+    padding: 0px 20px;
+}
+  @media only screen and (max-width: 600px)  { 
+  
+    .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 30px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    }
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100vw;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: left;
+  }
+  
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+}
