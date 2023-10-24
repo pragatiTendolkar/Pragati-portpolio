@@ -200,7 +200,7 @@ nav a.active {
     cursor: pointer;
   }
   .navbar {
-    position: absolute;
+    position: absolute !important;
     top: 0;
     right: 0;
     padding: 0;
@@ -239,12 +239,19 @@ nav a.active {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
-  
+  .navbar {
+    position: absolute;
+}
+
+nav {
+    padding: 40px;
+}
   .navbar .menu-items {
     padding-top: 120px;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     height: 100vh;
     width: 100vw;
+     background: aliceblue;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
